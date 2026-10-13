@@ -1,0 +1,26 @@
+{
+  "name": "telegram-channel-mcp",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A private, least-privilege Telegram Bot API MCP server.",
+  "type": "module",
+  "engines": {
+    "node": ">=18.18"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "dev": "tsx src/server.ts",
+    "start": "node dist/server.js",
+    "test": "tsx --test test/validation.test.ts test/telegram-api.test.ts",
+    "typecheck": "tsc --noEmit -p tsconfig.json"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.32.1",
+    "zod": "^4.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.12.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}
