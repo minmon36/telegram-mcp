@@ -46,13 +46,6 @@ The optional `MCP_PORT` environment variable defaults to `8787`. The server alwa
 http://127.0.0.1:8787/mcp
 ```
 
-## OmniRush.ai workspace MCP connection
-
-1. Start the server in the same environment where the token is set.
-2. In OmniRush.ai, open **Settings > Library > Advanced settings > Add workspace MCP**.
-3. Add the HTTP endpoint `http://127.0.0.1:8787/mcp` and indicate that this local server does **not** require OAuth.
-
-The endpoint is loopback-only, so it is reachable by OmniRush.ai on the same machine. A hosted or remote MCP client cannot reach this private endpoint without a separately managed network boundary.
 
 ## Tool inputs
 
